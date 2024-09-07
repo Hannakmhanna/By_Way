@@ -13,12 +13,14 @@ body {
 .wrapper {
   width: 90%;
   margin: 0 auto;
-  /* max-width: 1280px; */
+  
 }
 
 header {
   background-color:#FFFFFF;
   padding: 10px 20px;
+  border-bottom: 1px solid #E2E8F0;
+
 }
 
 header .header-container {
@@ -31,6 +33,7 @@ header .header-container {
 header .header-container .left {
   display: flex;
   align-items: center;
+  margin-left: -70px;
 }
 
 header .header-container .left h1 {
@@ -56,7 +59,8 @@ header .header-container .left h1 a img {
 header .header-container .right {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
+  margin-right: 55px;
 }
 
 header .header-container .right h1 {
@@ -74,23 +78,24 @@ header .header-container .right h1 a img {
 
 header .header-container .right .login-button,
 header .header-container .right .signup-button {
-  padding: 10px 20px;
-  font-size: 12px;
+  padding: 8px ;
+  font-size: 14px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 68px;
   height: 44px;
   text-align: center;
+  font-weight: 500;
 }
 
 header .header-container .right .login-button {
   color: #334155;
   border: 1px solid #334155;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px ;
   cursor: pointer;
   line-height: 1.5;
 }
@@ -102,22 +107,28 @@ header .header-container .right .login-button:hover {
 header .header-container .right .signup-button {
   width: 73px;
   height: 40px;
-  padding: 10px 0px 0px 0px;
+  padding: 8px ;
+  font-weight: 500;
   gap: 10px;
   background-color: #334155;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 header .header-container .right .signup-button:hover {
   background-color: #218838;
 }
+
 /* Spotlight section styling */
 
 #spotlight {
  
   padding: 50px 0;
   background-color: #FFFFFF; 
+  width: 1440px;
+  height: 600px;
+
+
 }
 
 #spotlight .wrapper {
@@ -132,14 +143,14 @@ header .header-container .right .signup-button:hover {
   align-items: center;
   /* max-width: 1200px; */
   margin: 0 auto;
-  width: 100%;
+  width: 92%;
 }
 
 /* Left spotlight (text and button) */
 #spotlight .wrapper .container .left-spotlight {
-  /* margin-right: 120px; */
+ 
   margin: 0;
-  margin-top: 89px
+  margin-top: 189px
 }
 
 #spotlight .wrapper .container .left-spotlight h1 {
@@ -287,9 +298,10 @@ header .header-container .right .signup-button:hover {
 
 #details {
   width: 1,441px;
-  height: 149px;
   padding: 40px 80px 40px 80px;
-  background-color: #f4f4f4;
+  background-color: #F8FAFC;
+  margin-left: -98px;
+  height: 66px;
 }
 
 #details .wrapper {
@@ -301,7 +313,7 @@ header .header-container .right .signup-button:hover {
   text-align: center;
   padding: 10px 0;
   width: 192px;
-  height: 69px;
+  height: 62px;
   
   /* margin-bottom: 120px; */
 }
@@ -316,6 +328,7 @@ font-size: 32px;
 font-weight: 600;
 line-height: 41.6px;
 text-align: center;
+
 
  
 }
@@ -346,13 +359,16 @@ line-height: 21px;
 #middle-section .wrapper .container-heading {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 20px;
 }
 
 #middle-section .wrapper .container-heading h2 {
   font-size: 24px;
   color: #333;
+  margin-top: 50px;
+  margin-left: 31px;
+  
 }
 
 #middle-section .wrapper .container-heading span a{
@@ -361,16 +377,21 @@ line-height: 21px;
   cursor: pointer;
   text-decoration: none;
 }
+#middle-section .wrapper .category{
+  margin-bottom: 12px;
+  width: 98%;
+}
 
 #middle-section .wrapper .category .category-grid {
   display: flex;
   justify-content: space-around;
   gap: 15px;
+  margin-top: 42px;
 }
 
 #middle-section .wrapper .category .category-grid .category-item {
   width: 286px;
-  height: 224px;
+  height: 209px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border: 1px solid #ddd;
   gap: 8px;
@@ -401,13 +422,13 @@ line-height: 21px;
 }
 
 #middle-section .wrapper .category .category-grid .category-item span {
-  font-size: 14px;
+  font-size: 17px;
   color: #777;
 }
 /* General Section Styling */
 #top-course {
   padding: 20px 0;
-  background-color: #f9f9f9;
+ 
 }
 
 #top-course .wrapper {
@@ -432,13 +453,15 @@ line-height: 21px;
 #top-course .wrapper .container-last .section-header h2 {
   font-size: 24px;
   color: #333;
+  margin-left: 58px;
 }
 
 #top-course .wrapper .container-last .section-header a {
   text-decoration: none;
   color: #007bff;
-  font-size: 14px;
+  font-size: 16px;
   transition: color 0.3s;
+  margin-right: 31px;
 }
 
 #top-course .wrapper .container-last .section-header a:hover {
@@ -459,9 +482,8 @@ line-height: 21px;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 222px;
-    height: 281px;
+    width: 240px;
+    height: 276px;
     padding: 16px;
     /* gap: 15px; */
     border-radius: 16px;
@@ -489,10 +511,12 @@ line-height: 21px;
 }
 
 #top-course .wrapper .container-last .course-grid .rating {
+
   font-size: 14px;
-  color: #ffcc00;
   margin-bottom: 10px;
 }
+
+
 
 #top-course .wrapper .container-last .course-grid .rating span {
   margin-right: 5px;
@@ -500,7 +524,7 @@ line-height: 21px;
 
 /* Top Instructors Section Styling */
 #top-course .wrapper .top-instructors {
-  padding-top: 40px;
+  padding-top: 74px;
 }
 
 #top-course .wrapper .top-instructors .section-header {
@@ -512,6 +536,8 @@ line-height: 21px;
 #top-course .wrapper .top-instructors .section-header h2 {
   font-size: 24px;
   color: #333;
+  margin-bottom: -7px;
+  margin-left: 43px;
 }
 
 #top-course .wrapper .top-instructors .section-header a {
@@ -519,6 +545,8 @@ line-height: 21px;
   color: #007bff;
   font-size: 14px;
   transition: color 0.3s;
+  margin-right: 39px;
+  margin-bottom: -16px;
 }
 
 #top-course .wrapper .top-instructors .section-header a:hover {
@@ -529,27 +557,29 @@ line-height: 21px;
 #top-course .wrapper .top-instructors .instructor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
+  padding-bottom: 60px;
+  margin-left: 27px;
+  margin-right: 13px;
 }
 
 #top-course .wrapper .top-instructors .instructor-grid .instructor-card {
   background-color: #fff;
-  padding: 15px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 156px;
-  height: 274px;
-  padding: 16px;
+  width: 194px;
+  height: 309px;
   border-radius: 16px;
   border: 1px 0px 0px 0px;
   opacity: 0px;
+  padding: 12px;
 }
 
 #top-course .wrapper .top-instructors .instructor-grid .instructor-card img {
-  width: 100%;
+  width: 87%;
   border-radius: 8px;
   margin-bottom: 15px;
+  padding: 12px;
 }
 
 #top-course .wrapper .top-instructors .instructor-grid .instructor-card h3 {
@@ -562,13 +592,59 @@ line-height: 21px;
   font-size: 14px;
   color: #666;
   margin: 5px 0;
+ 
 }
 
 #top-course .wrapper .top-instructors .instructor-grid .instructor-card .rating {
   font-size: 14px;
   color: #ffcc00;
   margin-bottom: 10px;
+  display: flex;
+
+  
 }
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card ul{
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #E2E8F0;
+  margin-top: 32px;
+}
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card ul li {
+  display: flex;
+  align-items: center;
+}
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card .rating{
+  display: flex;
+  align-items: center; 
+}
+
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card .rating img {
+  margin-right: 5px;
+  margin-top: 12px;
+}
+
+
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card .students {
+  margin-right:12px;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card ul img {
+  width: 23px;
+}
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card hr line {
+  
+}
+
+#top-course .wrapper .top-instructors .instructor-grid .instructor-card span{
+display: flex;
+margin-left: -14px;
+font-weight: bold;
+color: #000;
+}
+
+
 
 #top-course
   .wrapper
@@ -582,7 +658,7 @@ line-height: 21px;
 #testimonial {
     background-color:#F8FAFC;
 
-    padding: 50px 0;
+    padding: 92px 0;
    
 }
 
@@ -607,6 +683,7 @@ line-height: 21px;
     width: 328px;
     height: 68px;
     font-weight: 600;
+    margin-left: 38px;
 }
 
 /* #testimonial .wrapper .frame-heading h1 br {
@@ -619,21 +696,22 @@ line-height: 21px;
   height: 40px;
   display: flex;
   justify-content: flex-start;
+  margin-right: 50px;
 }
 
 #testimonial .wrapper .main-quotes{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  margin-left: 4px;
+  margin-left: 19px;
+  width: 85;
     
 }
 #testimonial .wrapper .main-quotes .qotues img{
   height: 44px;
   width: 99px;
-  margin-left: -300px; 
-  margin-bottom: 40px;
+  margin-left: -245px; 
+  margin-bottom: 17px;
 }
 
 #testimonial .wrapper .main-quotes .qotues .coma-image{
@@ -643,14 +721,13 @@ line-height: 21px;
 
 #testimonial .wrapper .qotues {
   background-color: #fff;
-  width: 347px;
-  height: 276px;
-  padding: 24px;
+  width: 100%;
+  height: 255px;
+  padding: 19px;
   margin-bottom: 20px;
   border-radius: 16px;
-  gap: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
- 
+  margin-right: 20px;
 
 }
 
@@ -667,8 +744,8 @@ line-height: 21px;
    
     color: #555;
     margin-bottom: 15px;
-    width: 345px;
-    font-size: 19px;
+    width: 346px;
+    font-size: 16px;
 }
 
 /* #testimonial .wrapper .qotues img {
@@ -679,8 +756,7 @@ line-height: 21px;
   
 } */
 /* Feedback Section */
-#feedback {
-  background-color: #f8f9fa; 
+#feedback { 
   padding: 50px 0; 
 }
 
@@ -704,9 +780,10 @@ line-height: 21px;
 }
 
 #feedback .left-section a img {
-  width: 400px; 
-  height: 425px; 
-  border-radius: 5px; 
+  width: 309px; 
+  height: 332px; 
+  border-radius: 5px;
+  margin-left: 86px; 
 }
 
 #feedback .right-section {
@@ -715,13 +792,13 @@ line-height: 21px;
 }
 
 #feedback .right-section h1 {
-  font-size: 32px; 
+  font-size: 20px; 
   color: #333; 
   margin-bottom: 20px; 
 }
 
 #feedback .right-section p {
-  font-size: 18px; 
+  font-size: 16px; 
   color: #666; 
   margin-bottom: 30px; 
   line-height: 1.6; 
@@ -730,7 +807,7 @@ line-height: 21px;
 #feedback .right-section .button {
   background-color: #020617; 
   color: white; 
-  padding: 15px 20px; 
+  padding: 15px 49px; 
   text-decoration: none; 
   border-radius: 8px; 
   cursor: pointer; 
@@ -741,7 +818,7 @@ line-height: 21px;
 #feedback .right-section .button img {
   margin-top: 10px;
   position: absolute;
-  right: -1%;
+  right: 6%;
   top: -0%;
 }
 
@@ -752,8 +829,8 @@ line-height: 21px;
 
 /* Last Section */
 #last {
-  background-color: #f8f9fa; 
-  padding: 50px 0; 
+ 
+  padding: 75px 0; 
 }
 
 #last .wrapper {
@@ -771,16 +848,17 @@ line-height: 21px;
 #last .first-section {
   flex: 1; 
   padding-right: 20px; 
+  margin-left: 43px;
 }
 
 #last .first-section h1 {
-  font-size: 32px; 
+  font-size: 20px; 
   color: #333; 
   margin-bottom: 20px; 
 }
 
 #last .first-section p {
-  font-size: 18px;
+  font-size: 16px;
   color: #666; 
   margin-bottom: 30px; 
   line-height: 1.6; 
@@ -806,7 +884,7 @@ line-height: 21px;
 #last .first-section .button img {
   margin-top: 10px;
   position: absolute;
-  right: 5%;
+  right: 9%;
   top: 2%;
  
 }
@@ -821,9 +899,11 @@ line-height: 21px;
 }
 
 #last .second-section a img {
-  max-width: 100%; 
+width: 67%; 
   height: auto; 
   border-radius: 10px; 
+  margin-top: -32px;
+  margin-right: 132px;
 }
 
 footer {
@@ -835,25 +915,27 @@ footer {
 
 footer #footer-section {
   width: 100%;
+ 
 }
 
-footer #footer-section .wrapper {
+
+footer #footer-section .wrapper .main-footer {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
+ 
+  margin: 51px auto;
   flex-wrap: wrap;
 }
 
 footer #footer-section .wrapper .footer-section {
-  flex: 1;
-  margin: 20px;
-  min-width: 200px;
+  /* margin: -13px; */
+  /* min-width: 200px; */
 }
 
 footer #footer-section .wrapper .footer-section a {
   text-decoration: none;
   color: #ecf0f1;
+  font-size: 14px;
 }
 
 footer #footer-section .wrapper .footer-section a img {
@@ -899,6 +981,7 @@ footer #footer-section .wrapper .footer-section ul li {
 
 footer #footer-section .wrapper .footer-section h3 {
   margin-top: 10px;
+  font-size: 18px;
 }
 
 footer #footer-section .wrapper .footer-section ul li a:hover {
@@ -990,6 +1073,7 @@ footer #footer-section .wrapper .footer-section .social-icons a img{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: 12px;
   }
  
   footer #footer-section .wrapper .footer-section .social-icons a img {
