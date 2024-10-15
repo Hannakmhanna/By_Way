@@ -87,6 +87,13 @@ header .wrapper #task-bar .right ul li a img {
 #button-sign:hover {
   background-color: #27ae60;
 }
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+/* General styles for the navigation bar */
+
 
 /* Spotlight section styling */
 
@@ -876,9 +883,13 @@ footer #footer-section .wrapper .footer-section .social-icons a img {
 
 @media (max-width: 1100px){
   #testimonial .wrapper .main-quotes .qotues .bottom-end{
-    margin-top: -14px;
+    margin-top: -2px;
   }
 }
+#testimonial .wrapper .qotues {
+  height: 252;
+}
+
 
 
  @media (max-width: 1280px)
@@ -934,7 +945,70 @@ footer #footer-section .wrapper .footer-section .social-icons a img {
     /* padding-left: 78px; */
   }
 }
+@media (max-width: 360px){
 
+    /* Hamburger menu icon style */
+    .menu-icon {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      right: 59px;
+      top: 27px;
+    }
+    header .wrapper .right ul li img {
+      position: absolute;
+      top: -41px;
+  }
+    header{
+      position: relative;
+    }
+    header .wrapper .right ul{
+      flex-direction: column;
+      border: 1px solid #ddd; /* Border style */
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+      position: absolute;
+      top: 60px; /* Adjust the position as needed */
+      right: 20px; /* Align with menu icon */
+      background-color: white; /* Background color for dropdown */
+      border: 1px solid #ddd; /* Border style */
+      box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+      
+    }
+  
+    /* Close icon hidden by default */
+    .close-icon {
+      display: none;
+      cursor: pointer;
+      position: absolute;
+      right: 49px;
+      top: 33px;
+    }
+  
+    /* Hide buttons initially */
+    .navlinks, .navlinks-log {
+      display: none; /* Initially hidden */
+      top: 62px;
+      right: 20px;
+      width: 153px;
+   
+   
+    }
+  
+    /* Show buttons when menu is active */
+    .navlinks.is-active, .navlinks-log.is-active {
+      display: flex;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    /* Style for buttons */
+    #button-log, #button-sign {
+      display: block;
+      width: 69%;
+      margin-bottom: 10px;
+      margin-left: 27px; /* Space between buttons */
+    }
+  }
 /* Mobile breakpoint (480px and below) */
 @media (max-width: 480px) {
   body {
@@ -978,17 +1052,7 @@ footer #footer-section .wrapper .footer-section .social-icons a img {
   }
 
 }
-@media (max-width: 360px){
-  #button-log, #button-sign{
-    padding: 8px 12px;
-    font-size: 13px;
-    width: 100%;
-  }
-  header .wrapper .right ul{
-   gap: 13px;
-  }
 
-}
 @media (max-width: 320px){
   #button-log, #button-sign{
     padding: 8px;
@@ -1091,6 +1155,7 @@ margin-left: none;
   #spotlight .wrapper .container{
     width: 100%;
     flex-direction: column;
+    gap: 40px;
   }
 }
 /* Responsive for 320px */
@@ -1446,6 +1511,12 @@ margin-left: none;
   #top-course .wrapper .container-last .box-grid {
     gap: 20px;
   }
+  #top-course .wrapper .top-instructors .instructor-grid .instructor-card{
+    height: 285px;
+  }
+  #top-course .wrapper .top-instructors .instructor-grid .instructor-card h3{
+    margin: 0;
+  }
   
   #top-course .wrapper .container-last .section-header h2 {
     font-size: 22px;
@@ -1462,6 +1533,9 @@ margin-left: none;
   #top-course .wrapper .container-last .box-grid {
     justify-content: space-between;
     gap: 20px;
+  }
+  #top-course .wrapper .top-instructors .instructor-grid .instructor-card h3 {
+    font-size: 16px;
   }
 
   #top-course .wrapper .container-last .section-header h2 {
@@ -1668,7 +1742,7 @@ margin-left: none;
   }
 
   #testimonial .wrapper .button-container {
-    margin-top: 16px;
+  
   }
 
   #testimonial .wrapper .main-quotes {
@@ -1702,7 +1776,7 @@ margin-left: none;
   }
 
   #testimonial .wrapper .qotues p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
   }
 }
@@ -1718,6 +1792,12 @@ margin-left: none;
   #testimonial .wrapper .qotues {
     width: 89%;
     padding: 12px;
+  }
+  #testimonial .wrapper .frame-heading .button-container .button-left{
+    padding: 5px 13px 8px 14px;
+  }
+  #testimonial .wrapper .frame-heading .button-container .button-right{
+    padding: 5px 13px 8px 14px;
   }
 
   #testimonial .wrapper .qotues p {
@@ -1781,6 +1861,7 @@ margin-left: none;
     /* width: 220px;
     height: 240px;
     margin-left: 0; */
+    width: 90%;
   }
 
   #feedback .right-section {
@@ -1808,6 +1889,10 @@ margin-left: none;
     flex-direction: column;
     text-align: center;
     align-items: center;
+    gap: 40px;
+  }
+  #feedback .left-section a img {
+    width: 70%;
   }
  
 } 
@@ -1829,12 +1914,15 @@ margin-left: none;
   }
 
   #feedback .right-section .button {
-    padding: 12px 30px;
+    padding: 13px 41px;
   }
 
   #feedback .right-section .button img {
-    right: 2%;
+    right: 3%;
     top: -3px;
+  }
+  #feedback .left-rightsection{
+    gap: 99px;
   }
 
 }
@@ -1858,12 +1946,12 @@ margin-left: none;
   }
 
   #feedback .right-section .button {
-    padding: 15px 28px;
-    font-size: 14px;
+    padding: 17px 51px 14px 15px;
+    font-size: 12px;
   }
 
   #feedback .right-section .button img {
-    right: 2%;
+    right: 9%;
     top: 1px;;
   }
 }
@@ -1919,11 +2007,14 @@ margin-left: none;
    text-align: center;
 
 }}
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   #last .main-firstsecond {
-    flex-direction: column;
+   
     align-items: center;
     text-align: center;
+  }
+  #last .second-section a img{
+    width: 117%;
   }
 
   #last .first-section {
@@ -1936,8 +2027,7 @@ margin-left: none;
   }
 
   #last .second-section a img {
-    width: 80%;
-    margin-right: 0;
+    width: 117%
   }
   .wrapper{
     width: 90%;
@@ -1962,6 +2052,18 @@ margin-left: none;
     font-size: 14px;
   }
 }
+@media (max-width: 640px){
+  #last .main-firstsecond{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 40px;
+  }
+  #last .second-section a img{
+    width: 70%;
+  }
+}
+
 @media (max-width: 480px) {
   #last {
     padding: 50px 0;
@@ -2056,5 +2158,20 @@ margin-left: none;
   footer #footer-section .wrapper .footer-section .down-footer p{
     color: #CBD5E1;
     font-size: 14px;
+  }
+  footer #footer-section .wrapper .footer-section .social-icons a img {
+    width: 41px;
+    height: 39px;
+  }
+}
+@media (max-width: 320px) {
+  footer #footer-section .wrapper .footer-section .social-icons {
+    width: 106%;
+   
+  }
+  
+  #testimonial .wrapper .frame-heading h1 {
+    font-size: 16px;
+    width: 51%;
   }
 }
